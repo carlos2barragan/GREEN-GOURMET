@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+ 
+  font-family: "DM Sans";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #255538;
+  padding: 20px 20px 18px;
+  border-radius: 6px;
+}
+
+
+header nav ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.sapo {
+  margin-top: 20px;
+  padding: 40px 20px;
+  background-image: url("../img/hero\ \(1\).jpg");
+  background-position: center center;
+  border-radius: 6px;
+}
+
+.sapo h1 {
+  color: #fff;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display";
+}
+
+h2,
+h3 {
+  color: #7e4333;
+  margin: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+article {
+  border-radius: 6px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px 0;
+  border-bottom: 1px solid #7e4333;
+}
+
+nav#menu-recetas {
+  display: flex;
+  justify-content: center;
+}
+
+nav#menu-recetas ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+  margin: 25px 0;
+}
+
+nav#menu-recetas ul li a {
+  background-color: #255538;
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 100px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #255538;
+  padding: 20px 20px 18px;
+  color: white;
+  border-radius: 6px;
+}
