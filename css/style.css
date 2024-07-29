@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap')
 
-* {
+*{
   box-sizing: border-box;
   margin: 0;
 }
@@ -17,6 +18,7 @@ header {
   background-color: #255538;
   padding: 20px 20px 18px;
   border-radius: 6px;
+  grid-area: header;
 }
 
 
@@ -38,14 +40,76 @@ header nav ul li a {
   background-position: center center;
   border-radius: 6px;
 }
+.plato {
+  display: flex;
+  align-items: center;
+  flex-direction: center;
+  margin-top: 20px;
+  width: 600px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+
+  background-image: url("../img/estofado.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#container-grid {
+  max-width: auto;
+  height: 100vh;
+  margin: o auto;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+  grid-template-columns: 1fr 300px;
+  grid-template-areas:
+    "header header "
+    "main  aside"
+    "footer footer ";
+}
 
 .sapo h1 {
   color: #fff;
   text-align: center;
 }
+.sapo2 {
+ 
+  background-image: url("");
+  margin-top: 20px;
+  width: 100px;
+  height: 90px;
+  margin: 10px;
+}
+.sapo3 {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  .sapo {
+    display: none;
+  }
 
-h1,
-h2,
+  ul {
+    flex-direction: column;
+  }
+
+  table td tr:nth-of-type(2) {
+    text-align: right;
+  }
+}
+h1 {
+  color: #7e4333;
+  margin: 0;
+  padding: 10px;
+  font-family: "DM Serif Display"
+}
+h2 {
+  color: #7e4333;
+  margin: 0;
+  padding: 10px;
+  font-family: "DM Serif Display"
+}
 h3 {
   font-family: "DM Serif Display";
 }
@@ -54,11 +118,20 @@ h2,
 h3 {
   color: #7e4333;
   margin: 0;
+  padding: 10px;
 }
+h4 {
+  color: #7e4333;
+  margin: 0;
+  padding: 10px;
+  font-family: "DM Serif Display"
+}
+
 
 main {
   max-width: 1000px;
   margin: 0 auto;
+  grid-area: main;
 }
 
 article {
@@ -99,7 +172,9 @@ nav#menu-recetas ul li a {
   padding: 8px 14px;
   border-radius: 100px;
 }
-
+#trece  {
+  padding: 10px;
+}
 footer {
   display: flex;
   justify-content: space-between;
@@ -108,4 +183,5 @@ footer {
   padding: 20px 20px 18px;
   color: white;
   border-radius: 6px;
+  grid-area: footer;
 }
