@@ -68,7 +68,7 @@ footer {
 
 .img-sugueridas {
   display: flex;
-  flex-direction: row;
+  flex-direction: space-between;
   object-fit: cover;
   
   background-image: url("");
@@ -78,21 +78,25 @@ footer {
 .platos-sugueridos {
   width: 80px;
   height: 70px;
-  display: flex;
-  flex-direction: row;
+ 
   object-fit: cover;
 }
-
-
+.contenidoPlatosSugeuridos {
+  display: flex;
+  flex-direction: column;
+}
+.contenidoPlatosSugeuridos h4 {
+  padding-left: 30px;
+}
 
 
 @media screen and (max-width: 768px) {
   #container-grid {
-    grid-template-rows: 1fr ;
+    grid-template-rows:  1fr ;
     grid-template-areas: 
     "main ""aside";
     gap: 0;
-    padding-left: 100px;
+    padding-left: 20%;
     
   }
   
@@ -101,18 +105,22 @@ footer {
 h1 {
   color: #7e4333;
 
-  padding: 10px;
+  padding: 25px;
+  
   font-family: "DM Serif Display";
 }
-
+p {
+  padding-left: 30px;
+}
 h2 {
   color: #7e4333;
   margin: 0;
-  padding: 10px;
+  padding: 25px;
   font-family: "DM Serif Display";
 }
 h3 {
   font-family: "DM Serif Display";
+  padding: 35px;
 }
 
 h2,
