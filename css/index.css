@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #255538;
+  padding: 5px 10px 30px;
+  border-radius: 6px;
+  grid-area: header;
+}
+
+header nav ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  
+  width: 1000px;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url("../img/hero.jpg");
+  background-position: center center;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+
+
+header {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 30px;
+  grid-template-areas: "header header ";
+}
+
+#grid-recetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "main main main";
+  gap: 20px;
+}
+
+footer {
+  height: 10vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas: "footer footer ";
+}
+
+
+
+.hero h1 {
+  color: #ece5e5;
+  text-align: center;
+  padding: 12%;
+}
+
+
+.img-receta {
+  background-image: url("");
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #000;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  #grid-recetas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main main";
+  }
+
+  .hero {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  
+  }
+
+@media screen and (max-width: 480px){
+  #grid-recetas {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+  }
+  main {
+    flex-direction: column;
+  }
+}
+  
+
+
+h1 {
+ 
+  color: #7e4333;
+  padding: 10px;
+  font-family: "DM Serif Display";
+}
+
+h2 {
+  color: #7e4333;
+  margin: 0;
+  padding: 10px;
+  font-family: "DM Serif Display";
+}
+h3 {
+  font-family: "DM Serif Display";
+}
+
+h2,
+h3 {
+  color: #7e4333;
+  margin: 0;
+}
+
+h4 {
+  color: #7e4333;
+  margin: 0;
+  padding: 10px;
+  font-family: "DM Serif Display";
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-area: main;
+}
+
+article.receta {
+  border-radius: 6px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px 0;
+  border-bottom: 1px solid #7e4333;
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #255538;
+  padding: 20px 20px 18px;
+  color: white;
+  border-radius: 6px;
+  grid-area: footer;
+}
