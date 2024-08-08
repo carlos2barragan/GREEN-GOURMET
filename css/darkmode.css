@@ -1,0 +1,24 @@
+body.dark{
+    background-color: #1E1E1E;
+}
+h1.dark {
+    color: white;
+}
+h2.dark #negro {
+    color: white;
+    background-color: black;
+}
+ul.dark{
+    color: white;
+    background-color: black;
+}
+img.dark {
+    
+    background-color: black;
+}
+
+body.dark #darkmode{
+    background-position: right center;
+}
+
+ 

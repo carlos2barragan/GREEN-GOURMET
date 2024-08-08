@@ -8,6 +8,7 @@
 
 body {
   font-family: "DM Sans";
+  transition: background-color .3s;
 }
 
 header {
@@ -31,6 +32,16 @@ header nav ul li a {
   text-decoration: none;
   color: white;
 }
+
+#darkmode{
+  display: inline-block;
+  background: url("../img/darkmode/darkMode.png") left center;
+  width: 100px;
+  height: 30px;
+  font-size: 0;
+  text-decoration: none;
+}
+
 
 .hero {
   

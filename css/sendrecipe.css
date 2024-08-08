@@ -14,19 +14,15 @@ button {
     background-color: #255538;
     color: white;
 }
-article  {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #255538;
-  padding: 5px 10px 30px;
+  padding: 5px 10px 10px;
   border-radius: 6px;
-  grid-area: header;
+  
 }
 
 header nav ul {
@@ -36,67 +32,31 @@ header nav ul {
   padding: 0;
 }
 
-header nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-header {
-  padding-top: 20px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 0.5px;
-  grid-template-areas: "header ";
-}
 
+header {
+  padding-top: 10px;
+  margin: 0 auto;
+  
+ 
+}
+#darkmode{
+  display: inline-block;
+  background: url("../img/darkmode/darkMode.png") left center;
+  width: 100px;
+  height: 30px;
+  font-size: 0;
+  text-decoration: none;
+}
 main {
-  display: grid;
-  grid-template-columns: 1fr ;
-  grid-template-rows: 1fr ;
-  grid-template-areas: "main ";
-  gap: 20px;
+height: 100%;
+  
 }
 
 footer {
   height: 8vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "footer  ";
-}
-.cuadrado{
-    display: flex;
-    justify-content: left;
-    align-items: end;
-    
-}
-@media screen and (max-width: 768px) {
-   
-  
-
- 
-
-    .cuadrado{
-        margin-left: 20px;
-        height: 15;
-        width: 150;
-       
-      }
 
 }
-@media screen and (max-width: 480px){
-  
-  main {
-    flex-direction: column;
-  }
-}
-.cuadrado {
-    margin-left: 40px;
-    height: 15px;
-    width: 200px;   
-           
-          
-    border: 1px solid #000; 
-  }
- 
+
 p {
     padding-left: 10px;
 }
@@ -132,13 +92,37 @@ h4 {
 }
 
 main {
+  height: 508px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
   max-width: 1000px;
   margin: 0 auto;
-  grid-area: main;
+  
 }
-
-
-
+@media screen and (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+}
+.form-group{
+  margin: 20px;
+  }
+  form{
+    margin: 0 auto;
+  }
+label{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+input{
+  width: 40%;
+}
+button[type="submit"]{
+  width: 10%;
+}
 
 footer {
   display: flex;
@@ -148,5 +132,5 @@ footer {
   padding: 20px 20px 18px;
   color: white;
   border-radius: 6px;
-  grid-area: footer;
+  
 }

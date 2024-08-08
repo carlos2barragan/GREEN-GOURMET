@@ -31,9 +31,17 @@ header nav ul li a {
   text-decoration: none;
   color: white;
 }
-
+#darkmode{
+  display: inline-block;
+  background: url("../img/darkmode/darkMode.png") left center;
+  width: 100px;
+  height: 30px;
+  font-size: 0;
+  text-decoration: none;
+}
 
 .plato {
+padding-top: 10px;
   width: 100%;
   height: 300px;
   border-radius: 10px;

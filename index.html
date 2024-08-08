@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INICIO</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/darkmode.css">
   </head>
   <body>
     <header>
@@ -14,15 +15,18 @@
           <li>
             <a href="./sendrecipe.html">Enviá tu receta</a>
           </li>
+          <li>
+            <a id="darkmode" href="javascript:void(0)"></a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="hero">
+      <div id="negro" class="hero">
         <h1>Ad lorem ipsum dolor sit amet</h1>
       
       </div>
-      <h2> sapo</h2>
+      <h2 id=""> sapo</h2>
       <section id="grid-recetas">
         <article class="receta">
           <a href="./receta1.html"
@@ -104,5 +108,6 @@
       <a href="./index.html"><img src="./img/logo_bitcook.png" alt="Logo de BitCook" /></a>
       <p>© 2024 Bogotá Institute of Technology</p>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
