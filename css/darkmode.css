@@ -1,24 +1,62 @@
 body.dark{
     background-color: #1E1E1E;
 }
-h1.dark {
-    color: white;
-}
-h2.dark #negro {
+
+h2.dark h1 {
     color: white;
     background-color: black;
 }
-ul.dark{
+body.dark  section h1{
     color: white;
-    background-color: black;
+    background-color: #1E1E1E;
 }
-img.dark {
+body.dark  h2{
+    color: white;
+    background-color: #1E1E1E;
+}
+body.dark  h3{
+    color: white;
+    background-color: #1E1E1E;
+}
+body.dark  h4{
+    color: white;
+    background-color: #1E1E1E;
+}
+body.dark  p{
+    color: white;
+    background-color: #1E1E1E;
+}
+body.dark ul {
     
-    background-color: black;
+    background-color: #1E1E1E;
+}
+body.dark li{
+    color: white;
+   
+}
+body.dark ul li.fondo-recetas{
+   background-color: #255538;
+}
+body.dark  aside h1{
+    color: white;
+    background-color: #1E1E1E;
+}
+body.dark  table{
+    color: white;
+    background-color: #1E1E1E;
 }
 
 body.dark #darkmode{
     background-position: right center;
+    background-color: #255538;
+}
+body.dark p.fondo-pie {
+    background-color: #255538;
+    
+}
+body.dark  label{
+    color: white;
+    background-color: #1E1E1E;
 }
 
  
