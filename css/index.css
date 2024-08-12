@@ -54,6 +54,8 @@ header nav ul li a {
   background-position: center center;
   border-radius: 30px;
   object-fit: cover;
+  margin-left: 20px;
+
 }
 
 
@@ -105,9 +107,7 @@ footer {
     grid-template-areas: "main main";
   }
 
-  .hero {
-    display: none;
-  }
+  
 
   main {
     flex-direction: column;
