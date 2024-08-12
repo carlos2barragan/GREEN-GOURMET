@@ -54,6 +54,20 @@ body.dark p.fondo-pie {
     background-color: #255538;
     
 }
+body.dark aside div{
+    background-color:#1E1E1E ;
+ }
+ body.dark main h1{
+    color: white;
+
+ }
+ body.dark main input {
+    background-color:#515151;
+ }
+ body.dark main textarea {
+    background-color: #515151;
+ }
+ 
 body.dark  label{
     color: white;
     background-color: #1E1E1E;

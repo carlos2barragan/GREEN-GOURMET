@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #255538;
-  padding: 5px 10px 30px;
+  padding: 5px 10px 10px;
   border-radius: 6px;
   grid-area: header;
 }
@@ -46,6 +46,7 @@ padding-top: 10px;
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
+  padding-left: 10px;
 }
 
 header {
@@ -57,7 +58,7 @@ header {
 
 
 footer {
-  height: 10vh;
+  height: 8vh;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-areas: "footer footer ";
@@ -79,12 +80,12 @@ footer {
   object-fit: cover;
   
   background-image: url("");
-  margin-top: 10px;
-  height: 100px;
+ 
+  height: 90px;
 }
 .platos-sugueridos {
-  width: 80px;
-  height: 70px;
+  width: 100px;
+  height: 80px;
  
   object-fit: cover;
 }
@@ -141,7 +142,7 @@ h3 {
 h4 {
   color: #7e4333;
   margin: 0;
-  padding: 10px;
+  padding: px;
   font-family: "DM Serif Display";
 }
 
@@ -173,7 +174,22 @@ td {
   padding: 10px 0;
   border-bottom: 1px solid #7e4333;
 }
-
+.card{
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0xp 1px 10px rgba(0,0,0,0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%)
+}
+#separacion li {
+  margin: 10px;
+  }
 
 
 footer {
@@ -181,7 +197,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #255538;
-  padding: 20px 20px 18px;
+  padding: 5px 5px 5px;
   color: white;
   border-radius: 6px;
   grid-area: footer;

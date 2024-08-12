@@ -16,7 +16,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #255538;
-  padding: 5px 10px 30px;
+  padding: 5px 10px 20px;
   border-radius: 6px;
   grid-area: header;
 }
@@ -180,7 +180,20 @@ td {
   padding: 10px 0;
   border-bottom: 1px solid #7e4333;
 }
-
+.card{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0xp 1px 10px rgba(0,0,0,0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%)
+}
 
 
 footer {
